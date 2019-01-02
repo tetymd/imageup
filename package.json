@@ -1,0 +1,11 @@
+{
+  "name": "imageup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tetymd/imageup.git",
+  "author": "Tetsuya Yamada <yamada.tetsuya258@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vue/cli": "^3.2.2"
+  }
+}
