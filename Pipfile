@@ -12,6 +12,7 @@ django-filter = "*"
 pymysql = "*"
 django-storages = "*"
 django-minio-storage = "*"
+awscli = "*"
 
 [dev-packages]
 
