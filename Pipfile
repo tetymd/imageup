@@ -13,6 +13,8 @@ pymysql = "*"
 django-storages = "*"
 django-minio-storage = "*"
 awscli = "*"
+gunicorn = "*"
+mysqlclient = "*"
 
 [dev-packages]
 
