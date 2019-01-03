@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'imageup'
+    'imageup',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
