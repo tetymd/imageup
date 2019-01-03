@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'imageup',
-    'rest_framework'
+    'rest_framework',
+    'minio_storage'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,14 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+EFAULT_FILE_STORAGE = 'minio_storage.storage.MinioMediaStorage'
+STATICFILES_STORAGE = 'minio_storage.storage.MinioStaticStorage'
+
+MINIO_STORAGE_ACCESS_KEY = 'develop_key'
+MINIO_STORAGE_SECRET_KEY = 'develop_key'
+MINIO_STORAGE_ENDPOINT = '127.0.0.1:9000'
+MINIO_STORAGE_USE_HTTPS = False
+MINIO_STORAGE_MEDIA_BUCKET_NAME = "media"
+MINIO_STORAGE_AUTO_CREATE_MEDIA_BUCKET = True
+MINIO_STORAGE_STATIC_BUCKET_NAME = "static"
+MINIO_STORAGE_AUTO_CREATE_STATIC_BUCKET = True
