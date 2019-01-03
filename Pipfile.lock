@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "4492457457d278d427f9ae039067242d65497eada9ce4f83e93ac8328acd80c6"
+            "sha256": "5516fa8282334d8540e9dbf40e7cd243ae3f96f80d5e9150a0aae3c9be238bd2"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -48,6 +48,14 @@
             "index": "pypi",
             "version": "==2.0.0"
         },
+        "django-storages": {
+            "hashes": [
+                "sha256:8e35d2c7baeda5dc6f0b4f9a0fc142d25f9a1bf72b8cebfcbc5db4863abc552d",
+                "sha256:b1a63cd5ea286ee5a9fb45de6c3c5c0ae132d58308d06f1ce9865cfcd5e470a7"
+            ],
+            "index": "pypi",
+            "version": "==1.7.1"
+        },
         "djangorestframework": {
             "hashes": [
                 "sha256:607865b0bb1598b153793892101d881466bd5a991de12bd6229abb18b1c86136",
@@ -92,7 +100,7 @@
                 "sha256:063df5763652e21de43de7d9e00ccf239f953a832941e37be541614732cdfc93",
                 "sha256:88f9287c0174266bb0d8cedd395cfba9c58e87e5ad86b2ce58859bc11be3cf02"
             ],
-            "markers": "python_version >= '2.7'",
+            "markers": "python_version != '3.0.*' and python_version != '3.1.*' and python_version >= '2.6'",
             "version": "==2.7.5"
         },
         "pytz": {
@@ -122,7 +130,7 @@
                 "sha256:61bf29cada3fc2fbefad4fdf059ea4bd1b4a86d2b6d15e1c7c0b582b9752fe39",
                 "sha256:de9529817c93f27c8ccbfead6985011db27bd0ddfcdb2d86f3f663385c6a9c22"
             ],
-            "markers": "python_version >= '3.4'",
+            "markers": "python_version != '3.0.*' and python_version != '3.2.*' and python_version < '4' and python_version >= '2.7' and python_version != '3.1.*' and python_version != '3.3.*'",
             "version": "==1.24.1"
         }
     },
