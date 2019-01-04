@@ -15,6 +15,7 @@ django-minio-storage = "*"
 awscli = "*"
 gunicorn = "*"
 mysqlclient = "*"
+pillow = "*"
 
 [dev-packages]
 

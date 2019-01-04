@@ -1,6 +1,11 @@
 from django.contrib import admin
-from .models import Post
+from .models import GetPostImage, PostImage
 
-@admin.register(Post)
+@admin.register(GetPostImage)
 class Post(admin.ModelAdmin):
     pass
+
+@admin.register(PostImage)
+class Post(admin.ModelAdmin):
+    pass
+

@@ -19,7 +19,8 @@ from rest_framework import routers
 from imageup import views
 
 router = routers.DefaultRouter()
-router.register(r'posts', views.PostViewSet)
+router.register(r'get/image', views.GetPostImageViewSet)
+router.register(r'post/image', views.PostImageViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
