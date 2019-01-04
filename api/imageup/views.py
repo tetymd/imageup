@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from .models import GetPostImage, PostImage
+from .models import GetPostImage, PostImage, Post, Comment
 from rest_framework import viewsets
-from .serializers import GetPostImageSerializer, PostImageSerializer
+from .serializers import GetPostImageSerializer, PostImageSerializer, PostSerializer, CommentSerializer
 
 class GetPostImageViewSet(viewsets.ModelViewSet):
     queryset = GetPostImage.objects.all()
@@ -12,3 +12,10 @@ class PostImageViewSet(viewsets.ModelViewSet):
     serializer_class = PostImageSerializer
     print("Call: PostViewSet")
 
+class PostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
+
+class CommentViewSet(viewsets.ModelViewSet):
+    queryset = Comment.objects.all()
+    serializer_class = CommentSerializer

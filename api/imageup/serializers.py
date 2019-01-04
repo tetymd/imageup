@@ -1,4 +1,4 @@
-from .models import GetPostImage, PostImage
+from .models import GetPostImage, PostImage, Post, Comment
 from rest_framework import serializers
 
 class GetPostImageSerializer(serializers.HyperlinkedModelSerializer):
@@ -11,3 +11,12 @@ class PostImageSerializer(serializers.HyperlinkedModelSerializer):
         model = PostImage
         fields = ('url', 'title', 'image')
 
+class PostSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Post
+        fields = ('url', 'title', 'description')
+
+class CommentSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Comment
+        fields = ('url', 'comment', 'related_post')
