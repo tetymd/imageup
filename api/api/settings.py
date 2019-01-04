@@ -25,7 +25,7 @@ SECRET_KEY = '7*s1(ng*(hkq!z_v*c34a@8utw(lg1tm2ttqpwh0b&r2w4)k)g'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'imageup',
         'USER': 'imageup',
         'PASSWORD': 'develop',
-        'HOST': '127.0.0.1'
+        'HOST': 'mysql'
     }
 }
 

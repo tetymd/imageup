@@ -1,0 +1,15 @@
+version: '3'
+services:
+  dev-server:
+    container_name: 'dev-server'
+    image: kennethreitz/pipenv:latest
+    working_dir: /app
+    # command: bash -c "pipenv install && pipenv run gunicorn api.wsgi:application"
+    command: bash -c "pipenv install && pipenv run python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - 8000:8000
+    volumes:
+      - ../api:/app
+      - ../Pipfile:/app/Pipfile
+    network_mode: 'imageup'
+    restart: always
