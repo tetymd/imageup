@@ -2,7 +2,7 @@ version: '3'
 services:
   drone-server:
     container_name: 'drone-server'
-    image: drone/drone:0.8.9
+    image: drone/drone:0.8.8
     ports:
       - 18000:8000
       - 9000:9000
@@ -22,7 +22,7 @@ services:
 
   drone-agent:
     container_name: 'drone-agent'
-    image: drone/agent:0.8.9
+    image: drone/agent:0.8.8
     depends_on:
       - drone-server
     volumes:
