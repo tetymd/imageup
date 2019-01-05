@@ -8,3 +8,4 @@ node_modules
 minio/data
 minio/config
 drone/.env
+*.sqlite

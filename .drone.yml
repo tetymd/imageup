@@ -1,0 +1,13 @@
+pipeline:
+  steps:
+  - name: frontend
+    image: node
+    commands:
+    - npm install
+    - npm test
+
+  - name: backend
+    image: golang
+    commands:
+    - go build
+    - go test
