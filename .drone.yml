@@ -1,4 +1,3 @@
-# test pipline
 kind: pipeline
 name: default
 
