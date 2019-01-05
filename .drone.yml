@@ -1,5 +1,12 @@
 pipeline:
   backend:
-    image: alpine
+    image: golang
     commands:
-      - echo "Hello!"
+      - go build
+      - go test
+  frontend:
+    image: node
+    commands:
+      - npm install
+      - npm run test
+      - npm run build
